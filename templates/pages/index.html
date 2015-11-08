@@ -49,7 +49,7 @@
         {% for slide in page.homepage.slides.all %}
             {% if forloop.counter == 1 %}
             <div class="active item">
-                <img src="{{ MEDIA_URL }}{% thumbnail slide.image 1920 690 %}" class="img-responsive" alt="">
+                <img src="{{ MEDIA_URL }}{% thumbnail slide.image 1920 690 %}" class="img-responsive center-block col-xs-12" alt="">
           
          		 <div class="carousel-caption">
                   <h3>{{ slide.main_label|title }}</h3>
@@ -58,7 +58,7 @@
             </div>
             {% else %}
             <div class="item">
-                <img src="{{ MEDIA_URL }}{% thumbnail slide.image 1920 690 %}" alt="">
+                <img src="{{ MEDIA_URL }}{% thumbnail slide.image 1920 690 %}" class="img-responsive center-block col-xs-12" alt="">
                
          		 <div class="carousel-caption">
                   <h3>{{ slide.main_label|title }}</h3>
@@ -69,10 +69,10 @@
         {% endfor %}
         </div>
         <!-- Carousel nav -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+        <a class="carousel-controls left" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+        <a class="carousel-controls right" href="#myCarousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
