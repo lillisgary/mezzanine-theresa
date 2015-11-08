@@ -13,15 +13,13 @@
                   <div class="header">    	            	
                     <div class="row">
                     
-                      <div class="col-md-4 pull-left">
-                        {% if page.homepage.logo %}
-                          <div class="logo"><a href="/"><img src="{{ MEDIA_URL }}{{ page.homepage.logo }}" alt="{{ settings.SITE_TITLE }}" /></a></div>
-                        {% else %}
-                          <div class="logo"><a href="/">{{ settings.SITE_TITLE }}</a></div>
-                        {% endif %}                                
-                        <div><h5>{{ settings.SITE_TAGLINE }}</h5></div>                        
-                      </div>
-                                                 
+                      {% if page.homepage.logo %}
+                        <div class="pull-left text-center">
+                          <div><a href="/"><img src="{{ MEDIA_URL }}{{ page.homepage.logo }}" class="img-responsive col-xs-12" alt="{{ settings.SITE_TITLE }}" /></a></div>
+                          <div><h5>{{ settings.SITE_TAGLINE }}</h5></div>                                                                               
+                        </div>
+                      {% endif %}
+                      
                     </div>                                                       
                   </div>
     <!--//header-->    
