@@ -141,30 +141,14 @@ $(document).ready(function(){
 </div>
 
 <script type="text/javascript">
-var strMessage = document.getElementById("youtube1");
-strMessage.innerHTML = strMessage.innerHTML
-                       .replace('<p>', '<iframe ')
-                       .replace('</p>', '></iframe>')
-
-var strMessageTwo = document.getElementById("youtube2");
-strMessageTwo.innerHTML = strMessageTwo.innerHTML
-                       .replace('<p>', '<iframe ')
-                       .replace('</p>', '></iframe>')
-
-var strMessageThree = document.getElementById("youtube3");
-strMessageThree.innerHTML = strMessageThree.innerHTML
-                       .replace('<p>', '<iframe ')
-                       .replace('</p>', '></iframe>')
-
-var strMessageFour = document.getElementById("youtube4");
-strMessageFour.innerHTML = strMessageFour.innerHTML
-                       .replace('<p>', '<iframe ')
-                       .replace('</p>', '></iframe>')
-
-var strMessageFive = document.getElementById("youtube5");
-strMessageFive.innerHTML = strMessageFive.innerHTML
-                       .replace('<p>', '<iframe ')
-                       .replace('</p>', '></iframe>')
+var x = document.querySelectorAll(".youtube");
+     var i;
+     for (i = 0; i < x.length;
+     i++) {
+     innerValue = x[i].innerHTML.trim()
+     x[i].innerHTML = "<iframe " + innerValue + "></iframe>";
+     }
+     
 </script>
 
 <footer style="margin-bottom: 0px;" class="panel panel-default">
