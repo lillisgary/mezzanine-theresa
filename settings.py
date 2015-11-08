@@ -231,6 +231,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "theme",
     "sue",
     "django.contrib.admin",
     "django.contrib.auth",
