@@ -1,0 +1,25 @@
+.line-separator{
+
+height:1px;
+
+background:#D5D3D3;
+
+border-bottom:#313030;
+
+}
+
+body {
+
+  background-image: url("http://www.free-spirit.work/static/media/uploads/sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+}
+
+.drop-shadow {
+
+  box-shadow: 0 0 30px black;
+
+}
