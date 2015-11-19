@@ -37,21 +37,26 @@ body {
 }
 
 .extruded {
-    color: #6D4BA0;
+    color: #FFF;
     font-family: proxima-nova-1, proxima-nova-2, 'Helvetica Neue', Arial, sans-serif; /* the original site doesn't use the @font-face attribute */
     font-size: 48px;
     font-weight: bold;
-    text-shadow: #7D7D7D 1px 1px, #7D7D7D 2px 2px, #7D7D7D 3px 3px;
+    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
     position: relative;
     -moz-transition: all 0.3s ease-out; /* FF3.7+ */
        -o-transition: all 0.3s ease-out; /* Opera 10.5 */
-  -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
+   -webkit-transition: all 0.3s ease-out; /* Saf3.2+, Chrome */
           transition: all 0.3s ease-out;
+          
+    background-color: #91C5EA;
+    border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    box-shadow: 6px 6px 3px #58E inset;
 }
 
-.extruded:hover {
-    color: #FFF;
-    text-shadow: #58E 1px 1px, #58E 2px 2px, #58E 3px 3px, #58E 4px 4px, #58E 5px 5px, #58E 6px 6px;
-    left: -6px;
-    top: -6px;
+.inver-shadow{
+
+
+
 }
